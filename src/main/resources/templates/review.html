@@ -4,12 +4,12 @@
 	<title th:x> Detail</title>
 </head>
 <body>
-	<h1> Course Detail </h1>
+	<h1> Review of: </h1>
 	<div th:each = "review: ${reviews}">
-		<img th:src= "${review.image}"/>
 		<p th:text = "${review.title}"></p>
+		<img th:src= "${review.image}"/></img>
 		<p th:text = "${review.category}"></p>
-		<p th:text = "${review.star}"></p>
+		<p th:text = "${review.star}"> Stars</p>
 		<p th:text = "${review.content}"></p>
 		<a href="http://localhost:8080/show-reviews">Back to Home Page</a>
 	</div>

@@ -12,11 +12,11 @@ public class ReviewRepository {
 	private Map<Long, Review> reviewList = new HashMap<>();
 	
 		public ReviewRepository() {
-			Review wowVanilla = new Review(1L, "World Of Warcraft: Vanilla", "/img/wowvanilla.jpg", "Original Release",
+			Review wowVanilla = new Review(1L, "World Of Warcraft: Vanilla", "/img/wowvanilla.png", "Original Release",
 					"Everyone says this is the best verision, but it's full of absurdities. The only redeeming quality is that Enhancement Shamans can tank.", 3);
 			Review wowBurningCrusade = new Review(2L, "World Of Warcraft: The Burning Crusade", "/img/wowbc.jpg", "First Release",
 					"This introduced some new features. Clearly the best part was PvP.", 4);
-			Review wowWotlk = new Review(3L, "World Of Warcraft: Wrath of the Litch King", "/img/wowwotlk.jpg", "Third Release",
+			Review wowWotlk = new Review(3L, "World Of Warcraft: Wrath of the Litch King", "/img/wowwotlk.png", "Third Release",
 					"Heroic Dungeons, pleanty of Raid instance releases. Death Knights introduced, Blizzard loves them.", 4);
 			
 			reviewList.put(wowVanilla.getId(), wowVanilla);
