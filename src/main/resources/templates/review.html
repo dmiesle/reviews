@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title th:x> Detail</title>
+</head>
+<body>
+	<h1> Course Detail </h1>
+	<div th:each = "review: ${reviews}">
+		<img th:src= "${review.image}"/>
+		<p th:text = "${review.title}"></p>
+		<p th:text = "${review.category}"></p>
+		<p th:text = "${review.star}"></p>
+		<p th:text = "${review.content}"></p>
+		<a href="http://localhost:8080/show-reviews">Back to Home Page</a>
+	</div>
+
+</body>
+</html>
